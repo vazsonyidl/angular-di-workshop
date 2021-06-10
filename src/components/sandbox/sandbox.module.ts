@@ -1,9 +1,11 @@
-import {SandboxComponent} from './sandbox.component';
-import {SandboxListComponent} from './sandbox-list.component';
+import {NgModule, OnDestroy} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {RouterModule} from '@angular/router';
+
+import {SandboxComponent} from './sandbox.component';
+import {SandboxListComponent} from './sandbox-list.component';
 import {sandboxConfig} from './sandbox.routing';
-import {NgModule, OnDestroy} from '@angular/core';
+import {SandboxService} from './sandbox.service';
 
 @NgModule({
   imports: [
@@ -12,6 +14,7 @@ import {NgModule, OnDestroy} from '@angular/core';
     sandboxConfig
   ],
   declarations: [SandboxComponent, SandboxListComponent],
+  // providers: [SandboxService]
 })
 export class SandboxModule implements OnDestroy {
   constructor() {

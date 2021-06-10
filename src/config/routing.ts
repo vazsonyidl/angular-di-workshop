@@ -13,6 +13,14 @@ const routes: Routes = [
   {
     path: 'host',
     loadChildren: () => import('../components/host/host.module').then(m => m.HostModule)
+  },
+  {
+    path: 'self',
+    loadChildren: () => import('../components/self/self.module').then(m => m.SelfModule)
+  },
+  {
+    path: 'skip-self',
+    loadChildren: () => import('../components/skip-self/skip-self.module').then(m => m.SkipSelfModule)
   }
 ];
 
