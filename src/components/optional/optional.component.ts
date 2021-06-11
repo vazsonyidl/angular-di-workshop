@@ -6,7 +6,7 @@ import {OptionalService} from './optional.service';
   template: `
   <app-optional-list *ngFor="let name of names" [optionalListName]="name"></app-optional-list>
   `,
-  // providers: [OptionalService]
+  providers: [OptionalService]
 })
 export class OptionalComponent {
   public names: Array<string>;

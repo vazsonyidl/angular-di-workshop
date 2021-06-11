@@ -10,5 +10,6 @@ import {FLOWER} from '../../app/injector.const';
 })
 export class SkipSelfComponent {
   constructor(@SkipSelf() @Inject(FLOWER) public flower) {
+  // constructor(@Inject(FLOWER) public flower) {
   }
 }

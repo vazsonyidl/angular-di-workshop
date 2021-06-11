@@ -7,7 +7,7 @@ import {FLOWER} from '../../app/injector.const';
       <div>List flower: {{flower}}</div>
       <ng-content></ng-content>
   `,
-  // providers: [{provide: FLOWER, useValue: 'Blossom 🌼'}]
+  providers: [{provide: FLOWER, useValue: 'Blossom 🌼'}]
 })
 export class HostListComponent {
   constructor(@Optional() @Inject(FLOWER) public flower: string) {

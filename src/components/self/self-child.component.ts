@@ -8,5 +8,6 @@ import {FLOWER} from '../../app/injector.const';
 })
 export class SelfChildComponent {
   constructor(@Self() @Inject(FLOWER) public flower) {
+  // constructor(@Inject(FLOWER) public flower) {
   }
 }

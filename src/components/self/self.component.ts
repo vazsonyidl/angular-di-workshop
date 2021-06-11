@@ -3,7 +3,7 @@ import {FLOWER} from '../../app/injector.const';
 
 @Component({
   template: `
-      <div>{{flower}} - from skip-self component</div>
+      <div>{{flower}} - from self component</div>
       <app-self-child></app-self-child>
   `
 })
